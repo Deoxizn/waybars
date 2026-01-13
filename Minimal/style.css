@@ -1,0 +1,137 @@
+@import "../omarchy/current/theme/waybar.css";
+
+/* --- Global-Settings ---*/
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 12px;
+    font-weight: bold;
+    min-height: 0px;
+}
+
+/* --- Waybar ---*/
+window#waybar {
+    background-color: transparent;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+window#waybar.empty #window {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+#waybar.empty .modules-center {
+    opacity: 0;
+}
+
+/* --- Custom Modules ---*/
+.modules-center {
+    min-width: 880px;
+    margin-left: 300px;
+}
+
+/* --- Tooltip ---*/
+tooltip {
+    padding: 6px;
+    background-color: alpha(@background, 1);
+    border: 1.5px solid alpha(@foreground, 0.8);
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+tooltip label {
+    color: @foreground;
+    font-weight: normal;
+}
+
+/* --- Workspaces --- */
+#workspaces {
+    margin: 2px;
+    padding: 0px 1px;
+    border-radius: 999px;
+    box-shadow: 0 1px 2px rgba(10, 10, 10, 0.8);
+    background-color: @background;
+    color: @foreground;
+}
+
+#workspaces button.active {
+    color: @foreground;
+    opacity: 1;
+}
+
+#workspaces button {
+    padding: 0px 2px;
+    margin: 0 4px 0 0;
+    border-radius: 999px;
+    background-color: @background;
+    color: @foreground;
+    box-shadow: 0 1px 2px rgba(10, 10, 10, 0.8);
+}
+
+#workspaces button.active {
+    background-color: alpha(@foreground, 1);
+    color: @background;
+    border-radius: 999px;
+}
+
+#workspaces button:hover {
+    background-color: @foreground;
+    color: @background;
+}
+
+/* --- General Modules (PILL SHAPE) --- */
+#window,
+#custom-omarchy,
+#battery,
+#custom-update,
+#idle_inhibitor,
+#custom-screenrecording-indicator,
+#custom-updatespacman {
+    min-width: 18px;
+    margin: 2px;
+    padding: 0px 12px;
+    border-radius: 999px;
+    box-shadow: 0 1px 2px rgba(10, 10, 10, 0.8);
+    background-color: @background;
+    color: @foreground;
+}
+
+/* --- Hover (keep pill) --- */
+#window:hover,
+#battery:hover,
+#custom-omarchy:hover,
+#custom-update:hover,
+#idle_inhibitor:hover,
+#custom-updatespacman:hover {
+    border-radius: 999px;
+    background-color: @foreground;
+    color: @background;
+    opacity: 1;
+}
+
+/* --- Battery states --- */
+#battery.warning {
+    color: #c95d0f;
+}
+
+#battery.critical:not(.charging) {
+    animation: blink2 0.5s steps(12) infinite alternate;
+}
+
+/* --- Animations unchanged --- */
+@keyframes blink {
+    to {
+        color: #4a4a4a;
+    }
+}
+
+@keyframes blink2 {
+    to {
+        background-color: @background;
+        color: #f53c3c;
+    }
+}
