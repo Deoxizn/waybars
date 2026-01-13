@@ -285,7 +285,7 @@
     "format": "{}°",
     "tooltip": true,
     "interval": 1800,
-    "exec": "wttrbar --fahrenheit --location  Sierra+Vista+AZ",
+    "exec": "wttrbar --fahrenheit --location  YOURLOCATION",
     "return-type": "json",
   },
   "pulseaudio#input": {
