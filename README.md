@@ -14,6 +14,11 @@ Remaster of one of HANCORE's waybar.. colored the icons to the color closet to t
 ![Image](Boxxy/boxxy.png)  
 
 
-**Pillz [Colored]**  
+**Pillz [Colored & Transparent]**  
 Remaster of HANCORE's expandable right hand side. colored icons, changed some icons, removed workspace numbers and changed main icon to Arch Logo.  
-![Image](Pillz/pillz.png)
+![Image](Pillz/pillz.png)  
+
+
+**Pillz [Colored & Blk]**  
+Remaster of HANCORE's expandable right hand side. colored icons, changed some icons, removed workspace numbers and changed main icon to Arch Logo.  
+![Image](Pillz_b/pillz_b.png)
