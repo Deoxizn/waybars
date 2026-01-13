@@ -1,0 +1,2 @@
+# waybars
+My Custom Waybars
