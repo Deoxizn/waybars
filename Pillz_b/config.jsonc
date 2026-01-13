@@ -162,7 +162,7 @@
     "format": "{}{icon}",
     "return-type": "json",
     "format-icons": {
-      "has-updates": "<span color='#eab676'> 󰏖< /span>",
+      "has-updates": " 󰏖",
       "updated": "",
     },
     "exec-if": "which waybar-module-pacman-updates",
