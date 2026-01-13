@@ -1,6 +1,9 @@
 # My Custom Waybars
 
 
+Requirements for the Bars to work:  
+```yay -S waybar-module-pacman-updates-git```  
+```yay -S wttrbar```  
 
 
 
