@@ -119,7 +119,7 @@
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "{icon} ║",
+    "format": "{icon}",
     "tooltip-format": "{percent}%",
     "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"],
   },
