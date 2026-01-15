@@ -36,4 +36,10 @@ Remaster of [HANCORE's](https://github.com/HANCORE-linux) expandable right hand 
   
   **Minimal**:  
 Minimalistic Waybar only showing the bare minimum to still be useful.  
-![image](Minimal/minimal.png)
+![image](Minimal/minimal.png)  
+  
+  
+    
+**Minimal (Vertical)**  
+Minimalist Vertical waybar with all the icons hiding behind the expanded tray to show as little as possible. Based off [Adsovetzky's](https://github.com/adsovetzky/Adsovetzky-Omarchy-s-Waybar/tree/main) v1.5  
+![image](Minimal_V/minimalv.png)
