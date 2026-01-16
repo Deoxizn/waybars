@@ -124,10 +124,9 @@
     "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"],
   },
   "custom/gpu": {
-    "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits",
-    "format": "{}ᶜ <span color='#98FB98'>󰾲</span>",
-    "tooltip-format": "GPU Usage: <span weight='bold'>{}</span>%",
-    "tooltip-exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
+    "exec": "~/.config/waybar/scripts/gpu.sh",
+    "format": "{} 󰾲",
+    "return-type": "json",
     "interval": 1,
   },
   "memory": {
