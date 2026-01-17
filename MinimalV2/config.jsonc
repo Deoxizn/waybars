@@ -180,7 +180,7 @@
   },
   "mpris": {
     "format": "{player_icon}",
-    "format-paused": "<span color='grey'>{status_icon} {title}</span>",
+    "format-paused": "<span color='grey'>{status_icon}</span>",
     "max-length": 50,
     "interval": 1,
     "player-icons": {
